@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D:\3D Objects\Metodo numericos pia1\CSS\pia.css">
+    <title>Newton hacia Adelante</title>
+</head>
+<header>
+  <div class="header" id="myHeader">
+    <p id="countdown">10:00</p>
+
+  </div>
+</header>
+<body>
+	<div id="title">
+  <h1>Newton hacia Adelante</h1>
+</div>
+<div id="explicacion">
+
+Las abscisas de los datos tienen igual separación con un tamaño de 
+intervalo h, los puntos se denotan por (xi, fi).br
+Para evaluar una fórmula de interpolación de Newton hacia Adelante son 
+necesarios: <br><br>
+1. tablas de coeficientes hacia adelante <br>
+2. coeficientes binomiales <br><br>
+- Tiene intervalos iguales <br>
+- Intervalos uniformes h =│ xi +1 - xi │<br><br>
+El valor inferior – el valor superior de acuerdo a la cantidad de puntos.<br>
+
+<center><img src="D:\3D Objects\Metodo numericos pia1\Metodos\Interpolacion\images\NewtonAd.png" alt="" width="500" height="auto"></center>
+<br>
+<center> <b>Factor binomial “s”.</b> </center><br><br>
+Es una coordenada local. <br><br>
+Siempre positivo (izquierda a derecha). <br><br>
+Si no lo es se invierten los valores de “x” y “y” (derecha a izquierda). <br><br>
+Los coeficientes binomiales están dados por: <br><br>
+<br>
+</div>
+<div id="ejer">
+<br> Obtener g(x) para X de: <b>5.3</b><br>
+<table id="tablaE">
+<tr>
+<th id="thE">Xi</th>
+<th>Yi</th>
+</tr>
+<tr>
+<td id="tdE">4.4</td>
+<td id="tdE">4.98</td>
+</tr>
+<tr>
+<td id="tdE">5.0</td>
+<td id="tdE">4.26</td>
+</tr>
+<tr>
+<td id="tdE">5.6</td>
+<td id="tdE">3.89</td>
+</tr>
+<tr>
+<td id="tdE">6.2</td>
+<td id="tdE">3.52</td>
+</tr>
+</table><br>
+h=|Xi+1 - Xi| <br>
+h1=|5.0-4.4|=|X2-X1|=6 <br>
+h2=|5.6-5.0|=|X3-X2|=6 <b>Los intervalos son equivalentes</b><br>
+<br>
+</div>
+
+<div id="ejer1">
+
+<form name="parte1" action="">
+  <table id="tablaA">
+		<tr>
+		<th id="thA">Xi</th>
+		<th id="thA">Yi</th>
+		<th id="thA">Δ' f(Xi)</th>
+		<th id="thA">Δ<sup>2</sup> f(Xi)</th>
+		<th id="thA">Δ<sup>3</sup> f(Xi)</th>
+		</tr>
+		<tr>
+		<td id="tdA">4.4</td>
+		<td id="tdA">4.98</td>
+		<td id="tdA">Δ'1=Y2-Y1<br> = 4.26-4.98 <br>= (-0.72)</td>
+		<td id="tdA">Δ<sup>2</sup>1=Δ'2-Δ'1 <br>= (-0.77)-(-0.72) <br>= <input type="number" id="res1" placeholder="Escribir respuesta"><br><br></td>
+		<td id="tdA">Δ<sup>3</sup>1=Δ<sup>2</sup>2-Δ<sup>2</sup>1 <br>=<input type="number" id="res3" placeholder="Escribir respuesta">-<input type="number" id="res4" placeholder="Escribir respuesta"><br>=<input type="number" id="res5" placeholder="Escribir respuesta"></td>
+		</tr>
+		<tr>
+		<td id="tdA">5.0</td>
+		<td id="tdA">4.26</td>
+		<td id="tdA">Δ'2=Y3-Y2<br> = 3.49-4.26 <br>= (-0.77)</td>
+		<td id="tdA">Δ<sup>2</sup>2=Δ'3-Δ'2 <br>= (-0.37)-(-0.77) <br>= <input type="number" id="res2" placeholder="Escribir respuesta"></td>
+		<td id="tdA"></td>
+		</tr>
+		<tr>
+		<td id="tdA">5.6</td>
+		<td id="tdA">3.89</td>
+		<td id="tdA">Δ'3=Y4-Y3<br> = 3.52-3.89 <br>= (-0.37)</td>
+		<td id="tdA"></td>
+		<td id="tdA"></td>
+		</tr>
+		<tr>
+		<td id="tdA">6.2</td>
+		<td id="tdA">3.52</td>
+		<td id="tdA"></td>
+		<td id="tdA"></td>
+		<td id="tdA"></td>
+		</tr>
+		</table><br>
+
+    <button id="btn" disabled onclick="mostrar()">Responder</button>
+
+    <div id="myDIV" >
+      <div id="ejer" style="display: none;">
+S=<span class="frac"><sup>x - x1</sup><span>&frasl;</span>
+<sub>h</sub></span> 
+S=<span class="frac"><sup>5.3 - 4.4</sup><span>&frasl;</span>
+<sub>6</sub></span><br>
+<b>S=0.15</b> <br><br>
+<span class="frac1"><sup>S</sup><span>&frasl;</span>
+<sub>0</sub></span>=1
+<span class="frac1"><sup>S</sup><span>&frasl;</span>
+<sub>1</sub></span>=0.15 <br><br>
+g(x)=Y1(<span class="frac1"><sup>S</sup><span>&frasl;</span>
+<sub>0</sub></span>)+
+Δ'1(<span class="frac1"><sup>S</sup><span>&frasl;</span>
+<sub>1</sub></span>)+
+Δ<sup>2</sup>1(<span class="frac"><sup>(S-(S-1))</sup><span>&frasl;</span>
+<sub>2!</sub></span>)+
+Δ<sup>3</sup>1(<span class="frac"><sup>(S-(S-1)(S-2))</sup><span>&frasl;</span>
+<sub>3!</sub></span>) <br><br>
+
+g(X)=4.98(1)+(-0.72)(0.15)+(-0.05)(<span class="frac"><sup>(0.15-(0.15-1))</sup><span>&frasl;</span>
+<sub>2!</sub></span>+0.45(<span class="frac"><sup>(0.15-(0.15-1)(0.15-2))</sup><span>&frasl;</span>
+<sub>3!</sub></span>) <br><br>
+
+
+
+        </div>
+        
+    </div>
+  </div>    
+
+    
+
+
+</form>
+    <div><b></b></div>
+    <script src="D:\3D Objects\Metodo numericos pia1\JS\ValiMostNAD.js"></script>
+    <script src="D:\3D Objects\Metodo numericos pia1\JS\timer.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+#principal{
+	width: 900px;
+	height: auto; overflow: hidden;
+	border: 0px solid #000;
+	margin: auto;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400&display=swap');
+#header{
+ 
+     font-family: 'Roboto Serif', serif;
+     margin: 0;
+    }
+   
+#logo{
+    font-size: x-large;
+	width: 800px;
+	height: 150px;
+	border: 0px solid #000;
+	float: left; font-family: sans-serif;
+}
+
+
+.titulo{
+	margin-top: 25px;
+	font-size: 30px;
+}
+
+.sub-titulo{
+	font-size: 14px;
+	margin-top: -20px;
+}
+
+.navegacion ul{
+    list-style: none;
+    
+}
+
+
+#texto{
+    color: black;
+    height: 150x;
+ 
+}
+#explicacion{
+    color: black;
+    font-family: 'Roboto Serif', serif;
+    font-size: medium;
+
+    text-align: justify;
+    text-justify: inter-word;
+}
+#ejer{
+    color: black;
+    font-family: 'Roboto Serif', serif;
+    font-size: medium;
+    text-align: justify;
+}
+#ejer_oculto{
+    color: black;
+    font-family: 'Roboto Serif', serif;
+    font-size: medium;
+    text-align: justify;
+}
+body{
+	background-image: url("")
+}
+body{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+}
+#pagina{
+    text-align: center;
+}
+#principal{
+	width: 900px;
+	height: auto; overflow: hidden;
+	border: 0px solid #000;
+	margin: auto;
+
+}
+#formato{
+    text-align: center;
+}
+/* header */
+.header {
+    padding: 10px 16px;
+    background: white;
+    color: black;
+  }
+  .content {
+    padding: 16px;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+ .sticky + .content {
+    padding-top: 102px;
+  }
+/*timer*/
+  p {
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin: 0;
+    height: 70px;
+    width: 200px;
+   
+}

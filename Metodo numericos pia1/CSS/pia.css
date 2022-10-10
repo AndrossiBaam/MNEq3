@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400&display=swap');
+#title{
+    font-size: large;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+/*Timer y sticky*/
+.header {
+    font-family: 'Roboto Serif', serif;
+    padding: 10px 16px;
+    background: rgb(71, 68, 68);
+    color: black;
+
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }  
+  p {
+    background-color: white;
+    display: inline-flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin: 0;
+    height: 70px;
+    width: 200px;
+   }
+#explicacion{
+    color: black;
+    font-family: 'Roboto Serif', serif;
+    font-size: medium;
+
+    text-align: justify;
+    text-justify: inter-word;
+}
+#ejer{
+    color: black;
+    font-family: 'Roboto Serif', serif;
+    font-size: medium;
+    text-align: justify;
+}
+#ejer_oculto{
+    color: black;
+    font-family: 'Roboto Serif', serif;
+    font-size: medium;
+    text-align: justify;
+}
+
+#pagina{
+    text-align: center;
+}
+
+body{
+	background-image: url("") 
+}
+body{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    max-width: 800px;
+    margin: auto;
+    
+}
+#principal{
+	width: 900px;
+	height: auto; overflow: hidden;
+	border: 0px solid #000;
+	margin: auto;
+
+}
+
+video{
+    margin: 0% 30% ;
+    height: 300px;
+    width: 400px;
+    
+}
+
+iframe{
+    margin: 0% 0% 0% 0%;
+    height: 300px;
+    width: 33%;
+}
+
+#formato{
+    text-align: center;
+}
+
+#formulario{
+    text-align: center;
+}
+/*Tablas*/
+#tabla{
+    margin: auto;
+}
+#tablaE{
+    
+    margin: auto;
+    border: 1px solid white; 
+    border-collapse: collapse;
+}
+#thE, #tdE {
+    border: 1px solid white;
+    padding: 5px;
+
+}
+#tablaA{
+  margin: auto;
+}
+#tablaA{
+  
+  margin: auto;
+  border: 1px solid black; 
+  border-collapse: collapse;
+}
+#thA, #tdA {
+  border: 1px solid black;
+  padding: 5px;
+
+}
+
+/*Fracciones*/
+span.frac {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: medium;
+    font-family: 'Roboto Serif', serif;
+    
+  }
+  span.frac > sup, span.frac > sub {
+    display: block;
+    font: inherit;
+    padding: 0 0.3em;
+    font-size: medium;
+  }
+  span.frac > sup {border-bottom: 0.08em solid;}
+  span.frac > span {display: none;}
+
+  span.frac1 {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: medium;
+    font-family: 'Roboto Serif', serif;
+    
+  }
+  span.frac1 > sup, span.frac > sub {
+    display: block;
+    font: inherit;
+    padding: 0 0.3em;
+    font-size: medium;
+  }
+  span.frac1 > sup {border-bottom: 0.08em white;}
+  span.frac1 > span {display: none;}
+
+
+  #ejer1 {
+    display: flex;
+    justify-content: center;
+  }
+  #ejer2 {
+    display: flex;
+    justify-content: center;
+  }

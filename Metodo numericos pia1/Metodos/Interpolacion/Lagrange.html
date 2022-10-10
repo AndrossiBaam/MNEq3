@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D:\3D Objects\Metodo numericos pia1\CSS\pia.css">
+    <title>Lagrange</title>
+</head>
+<header>
+  <div class="header" id="myHeader">
+    <p id="countdown">10:00</p>
+
+  </div>
+</header>
+<body>
+  <div id="title">
+    <h1>Lagrange</h1>
+    </div>
+    <div id="explicacion">
+
+Se aplica para intervalos uniformes y no uniformes. <br>
+
+<table id="tabla">
+<tr>
+  <td></td>
+  <td></td>
+  <td>n</td>
+  <td></td>
+</tr>
+<tr>
+  <td>g(x)=</td>
+  <td>&Sigma; yi</td>
+  <td>π</td>
+  <td></td>
+  <td>y-yj<hr style="width: 25px; height: .5px; background-color: #000000">  </td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>j=x</td>
+  <td></td>
+  <td>y-yj</td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td>j≠x</td>
+  <td></td>
+</tr>
+</table> <br>
+Esta ecuación es equivalente a la serie de potencias que se determinan resolviendo la ecuación lineal.
+<br>
+Desventajas:
+<br>
+1)	La cantidad de cálculos necesarios para la interpolación es grande.
+<br>
+2)	La interpolación para otro valor “x” requiere la misma cantidad de cálculos adicionales, ya que no se puede utilizar partes de la aplicación previa.
+<br>
+3)	Cuando el número de datos tiene que incrementarse o decrementarse, no se pueden utilizar los resultados en los cálculos previos.
+<br>
+4)	La evaluación de error no es fácil.
+<br>
+</div>
+<div id="ejer">
+<br> Obtener g(x) para X de: <b>6.2</b><br>
+<table id="tablaE">
+<tr>
+<th id="thE">Xi</th>
+<th>Yi</th>
+</tr>
+<tr>
+<td id="tdE">4.4</td>
+<td id="tdE">2.52</td>
+</tr>
+<tr>
+<td id="tdE">5.2</td>
+<td id="tdE">2.98</td>
+</tr>
+<tr>
+<td id="tdE">5.7</td>
+<td id="tdE">3.34</td>
+</tr>
+<tr>
+<td id="tdE">6.9</td>
+<td id="tdE">4.12</td>
+</tr>
+</table><br>
+</div>
+
+
+<div id="ejer1">
+<form action="">
+2.52&nbsp;<span class="frac"><sup>(6.2-5.2)(6.2-5.7)(6.2-6.9)</sup><span>&frasl;</span>
+<sub>(4.4-5.2)(4.4-5.7)(4.4-6.9)</sub></span>=
+
+<input type="number" id="res1" placeholder="Escribir respuesta"><br><br>
+
+2.98&nbsp;<span class="frac"><sup>(6.2-4.4)(6.2-5.7)(6.2-6.9)</sup><span>&frasl;</span>
+<sub>(5.2-4.4)(5.2-5.7)(5.2-6.9)</sub></span>=
+
+<input type="number" id="res2" placeholder="Escribir respuesta"><br><br>
+
+3.34&nbsp;<span class="frac"><sup>(6.2-4.4)(6.2-5.2)(6.2-6.9)</sup><span>&frasl;</span>
+<sub>(5.7-4.4)(5.7-5.2)(5.7-6.9)</sub></span>=
+
+<input type="number" id="res3" placeholder="Escribir respuesta"><br><br>
+
+4.12&nbsp;<span class="frac"><sup>(6.2-4.4)(6.2-5.2)(6.2-5.7)</sup><span>&frasl;</span>
+<sub>(6.9-4.4)(6.9-5.2)(6.9-5.7)</sub></span>=
+
+<input type="number" id="res4" placeholder="Escribir respuesta"><br><br>
+
+
+
+    <button id="btn" disabled onclick="mostrar()">Responder</button>
+
+    <div id="myDIV" style="display: none;">
+      <div id="ejer">
+        <br> Se realiza la sumatoria de las operaciones para obtener el resultado.<br>
+        <table id="tablaE">
+        <tr>
+        <td id="tdE"></td>
+        <td id="tdE">(0.3392307692)</td>
+        </tr>
+        <tr>
+        <td id="tdE">+</td>
+        <td id="tdE">(-2.7608823529)</td>
+        </tr>
+        <tr>
+        <td id="tdE">+</td>
+        <td id="tdE">(5.3953846154)</td>
+        </tr>
+        <tr>
+        <td id="tdE">+</td>
+        <td id="tdE">(0.7270588235)<hr style="width: 100px; height: .5px; background-color: #000000"></td>
+        </tr>        
+        <tr>
+        <td id="tdE"></td>
+        <td id="tdE">3.7007918552
+        </td>
+        </tr>
+        </table><br>
+        </div>
+        
+    </div>
+  </div>    
+
+    
+
+
+    </form>
+    <div><b></b></div>
+    <script src="D:\3D Objects\Metodo numericos pia1\JS\ValiMost.js"></script>
+    <script src="D:\3D Objects\Metodo numericos pia1\JS\timer.js"></script>
+
+</body>
+</html>
