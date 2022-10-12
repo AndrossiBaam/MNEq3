@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D:\3D Objects\Metodo numericos pia1\CSS\pia.css">
+    <title>Jacobi</title>
+</head>
+<header>
+  <div class="header" id="myHeader">
+    <p id="countdown">10:00</p>
+
+  </div>
+</header>
+<body>
+  <div id="title">
+    <h1>Jacobi</h1>
+    </div>
+    <div id="explicacion">
+
+Analiza la Diagonal Dominante <br>
+
+<table id="tabla">
+<tr>
+  <td>1)</td>
+  <td><b>4a</b></td>
+  <td>-0.5b</td>
+  <td>-0.4</td>
+  <td>=</td>
+  <td>42.5</td>
+</tr>
+<tr>
+  <td>2)</td>
+  <td>0.9a</td>
+  <td>+ <span><b>6b</b></span></td>
+  <td>-0.4c</td>
+  <td>=</td>
+  <td>-29.5</td>
+</tr>
+<tr>
+  <td>3)</td>
+  <td>0.8a</td>
+  <td>-0.7b</td>
+  <td>+<b>12c</b></td>
+  <td>=</td>
+  <td>8.55</td>
+</tr>
+
+</table> <br>
+Despejando “a” de la ec.1, “b” de la ec.2 y “c” de la ec.3 <br><br>
+
+4) a=&nbsp;<span class="frac"><sup>42.5+0.5b+0.4c</sup><span>&frasl;</span>
+<sub>4</sub></span><br><br>
+5) b=&nbsp;<span class="frac"><sup>-29.5-0.9a+0.4c</sup><span>&frasl;</span>
+<sub>6</sub></span><br><br>
+6) b=&nbsp;<span class="frac"><sup>8.55-0.8a+0.7b</sup><span>&frasl;</span>
+<sub>12</sub></span><br><br>
+
+</div>
+
+<div id="ejer">
+<br> <b>1er. Iteración.</b>  <br>
+
+Con b <sub>0</sub> = 1 y c <sub>0</sub> = 1, obtener “a1”<br><br>
+a<sub>1</sub>=&nbsp;<span class="frac"><sup>42.5+0.5(1)+0.4(1)</sup><span>&frasl;</span>
+  <sub>4</sub></span>= <b> 10.85</b><br><br>
+  Considerando a<sub>0</sub> = 1 y c<sub>0</sub> = 1, obtener “b1” <br> <br>
+b<sub>1</sub>=&nbsp;<span class="frac"><sup>-29.5-0.9(10.625)+0.4(0)</sup><span>&frasl;</span>
+  <sub>6</sub></span>=<b>-5</b> <br><br>
+  Siendo a<sub>0</sub> = 1 y b<sub>0</sub> = 1, obtener “c1” <br><br>
+b<sub>1</sub>=&nbsp;<span class="frac"><sup>8.55-0.8(0)+0.7(0)</sup><span>&frasl;</span>
+  <sub>12</sub></span>=<b> 0.704166667  </b><br><br>
+</div>
+
+
+<div id="ejer">
+  <br> <b>2da. Iteración.</b>  <br><br>
+  
+a<sub>2</sub> =&nbsp;<span class="frac"><sup>42.5+0.5<b>(-5)</b>+0.4<b>(0.704166667)</b></sup><span>&frasl;</span>
+  <sub>4</sub></span>= <b>?</b><br><br>
+b<sub>2</sub> =&nbsp;<span class="frac"><sup>-29.5-0.9a<sub>2</sub>+0.4c<sub>1</sub></sup><span>&frasl;</span>
+  <sub>6</sub></span>= <b>?</b><br><br>
+c<sub>2</sub> =&nbsp;<span class="frac"><sup>8.55-0.8a<sub>2</sub>+0.7b<sub>2</sub></sup><span>&frasl;</span>
+  <sub>12</sub></span>=<b>?</b><br><br> 
+
+
+  </div>    
+  <div id="ejer">
+    <form action="">
+    Responder <br><br>
+    Cual es la ultima itercion y los valores finales de "ɛ <sub>a</sub>" , "ɛ <sub>b</sub>" y "ɛ <sub>c</sub>" <br><br>
+    <b>Iteracion</b><input type="number" id="res1" placeholder="Escribir respuesta"><br><br>
+    ɛ <sub>a</sub> <input type="number" id="res2" placeholder="Escribir respuesta"><br><br>
+    ɛ <sub>b</sub> <input type="number" id="res3" placeholder="Escribir respuesta"><br><br>
+    ɛ <sub>c</sub> <input type="number" id="res4" placeholder="Escribir respuesta"><br><br>
+      </div>
+
+    </form>
+    <div><b></b> </div>
+    
+    <script src="D:\3D Objects\Metodo numericos pia1\JS\timer.js"></script>
+
+</body>
+</html>

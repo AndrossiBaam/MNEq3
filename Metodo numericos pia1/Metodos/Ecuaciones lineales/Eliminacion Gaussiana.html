@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D:\3D Objects\Metodo numericos pia1\CSS\pia.css">
+    <title>Eliminacion Gaussiana</title>
+</head>
+<header>
+  <div class="header" id="myHeader">
+    <p id="countdown">10:00</p>
+
+  </div>
+</header>
+<body>
+  <div id="title">
+    <h1>Eliminacion Gaussiana</h1>
+    </div>
+    <div id="explicacion">
+
+      En este método se aplican varias operaciones de renglón, que son las siguientes: <br><br>
+      1) Multiplicar toda la fila por una constante distinta de cero. <br>
+      2) Sumar o restar un múltiplo de una ecuación a otra. <br>
+      3) Intercambiar de posición dos ecuaciones. <br><br>
+      Para facilitar el proceso, se forma una matriz aumentada que contiene solamente los 
+      coeficientes de las ecuaciones. <br><br>
+      Al final del proceso, el sistema se reduce a una forma triangular, donde la última 
+      ecuación tiene la solución de la última incógnita. <br> <br>
+      Posteriormente, se aplica un proceso de sustitución hacia atrás para ir calculando 
+      progresivamente los valores de las otras incógnitas. <br>
+      
+
+<table id="tabla">
+<tr>
+  <td>3</td>
+  <td>+</td>
+  <td>1</td>
+  <td>-</td>
+  <td>3</td>
+  <td>=</td>
+  <td>-1</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>+</td>
+  <td>1</td>
+  <td>-</td>
+  <td>3</td>
+  <td>=</td>
+  <td>2</td>
+</tr>
+<tr>
+  <td>-1</td>
+  <td>+</td>
+  <td>3</td>
+  <td>-</td>
+  <td>3</td>
+  <td>=</td>
+  <td>6</td>
+</tr>
+
+</table> <br>
+
+</div>
+
+<div id="ejer">
+<br> <br>
+Fila 2 - Fila 1
+<table id="tabla">
+  <tr>
+    <td>-2</td>
+    <td class="br">*</td>
+    <td>3</td>
+    <td>+</td>
+    <td>1</td>
+    <td>-</td>
+    <td>3</td>
+    <td>=</td>
+    <td>-1</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td class="br">*</td>
+    <td>2</td>
+    <td>+</td>
+    <td>1</td>
+    <td>-</td>
+    <td>3</td>
+    <td>=</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="br"></td>
+    <td>-1</td>
+    <td>+</td>
+    <td>3</td>
+    <td>-</td>
+    <td>3</td>
+    <td>=</td>
+    <td>6</td>
+  </tr>
+  
+  </table> <br>
+  <br><br>
+</div>
+
+
+<div id="ejer">
+Fila 3 - Fila 1 <br>
+<table id="tabla">
+  <tr>
+    <td>?</td>
+    <td class="br">*</td>
+    <td>3</td>
+    <td></td>
+    <td>1</td>
+    <td>-</td>
+    <td>3</td>
+    <td></td>
+    <td>-1</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="br"></td>
+    <td>?</td>
+    <td></td>
+    <td>?</td>
+    <td></td>
+    <td>?</td>
+    <td></td>
+    <td>?</td>
+  </tr>
+  <tr>
+    <td>?</td>
+    <td class="br">*</td>
+    <td>-1</td>
+    <td>+</td>
+    <td>3</td>
+    <td>-</td>
+    <td>3</td>
+    <td></td>
+    <td>6</td>
+  </tr>
+  
+  </table> <br>
+    Desarrolla para obtener el valor de X, Y y Z <br><br>
+<form action="">
+    X =<input type="number" id="res1" placeholder="Escribir respuesta"><br><br>
+    Y =<input type="number" id="res2" placeholder="Escribir respuesta"><br><br>
+    Z =<input type="number" id="res3" placeholder="Escribir respuesta"><br><br>
+
+
+
+    <button id="btn" disabled onclick="">Responder</button>
+
+    </form>
+</div>
+
+    <script src="D:\3D Objects\Metodo numericos pia1\JS\timer.js"></script>
+
+</body>
+</html>

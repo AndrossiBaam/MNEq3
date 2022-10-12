@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D:\3D Objects\Metodo numericos pia1\CSS\pia.css">
+    <title>Gauss-Jordan</title>
+</head>
+<header>
+  <div class="header" id="myHeader">
+    <p id="countdown">10:00</p>
+
+  </div>
+</header>
+<body>
+  <div id="title">
+    <h1>Gauss-Jordan</h1>
+    </div>
+    <div id="explicacion">
+
+      Todos los renglones se normalizan al dividirlos entre su elemento pivote. De esta 
+      forma, el paso de eliminación genera una matriz identidad, y así obtener la solución.
+       
+
+<table id="tabla">
+<tr>
+  <td>1</td>
+  <td>-</td>
+  <td>1</td>
+  <td>+</td>
+  <td>3</td>
+  <td>=</td>
+  <td>13</td>
+</tr>
+<tr>
+  <td>1</td>
+  <td>+</td>
+  <td>1</td>
+  <td>+</td>
+  <td>1</td>
+  <td>=</td>
+  <td>11</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>+</td>
+  <td>2</td>
+  <td>-</td>
+  <td>1</td>
+  <td>=</td>
+  <td>7</td>
+</tr>
+
+</table> <br>
+
+</div>
+
+<div id="ejer">
+<br> Obtener g(x) para X de: <b>6.2</b><br>
+<table id="tabla">
+  <tr>
+    <td>1</td>
+    <td></td>
+    <td>-1</td>
+    <td></td>
+    <td>3</td>
+    <td></td>
+    <td>13</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td></td>
+    <td>1</td>
+    <td></td>
+    <td>1</td>
+    <td></td>
+    <td>11</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td></td>
+    <td>2</td>
+    <td></td>
+    <td>-1</td>
+    <td></td>
+    <td>7</td>
+  </tr>
+  
+  </table>
+  <br><br>
+</div>
+
+
+<div id="ejer">
+Pivote=1 <br>
+  <table id="tabla">
+    <tr>
+      <td class="bb"><b>1</b></td>
+      <td class="blb"></td>
+      <td class="bb"><b>-1</b></td>
+      <td class="bb"></td>
+      <td class="bb"><b>3</b></td>
+      <td class="bb"></td>
+      <td class="bb"><b>13</b></td>
+    </tr>
+    <tr>
+      <td><b>0</b></td>
+      <td class="bl"></td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td><b>0</b></td>
+      <td class="bl"></td>
+      <td>2</td>
+      <td></td>
+      <td>-1</td>
+      <td></td>
+      <td>7</td>
+    </tr>
+    
+    </table><br>
+    Desarrolla para obtener el valor de X, Y y Z <br><br>
+<form action="">
+    X =<input type="number" id="res1" placeholder="Escribir respuesta"><br><br>
+    Y =<input type="number" id="res2" placeholder="Escribir respuesta"><br><br>
+    Z =<input type="number" id="res3" placeholder="Escribir respuesta"><br><br>
+
+
+
+    <button id="btn" disabled onclick="">Responder</button>
+
+    </form>
+</div>
+
+    <script src="D:\3D Objects\Metodo numericos pia1\JS\timer.js"></script>
+
+</body>
+</html>

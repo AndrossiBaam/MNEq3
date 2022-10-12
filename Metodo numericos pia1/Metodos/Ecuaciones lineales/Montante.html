@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D:\3D Objects\Metodo numericos pia1\CSS\pia.css">
+    <title>Montante</title>
+</head>
+<header>
+  <div class="header" id="myHeader">
+    <p id="countdown">10:00</p>
+
+  </div>
+</header>
+<body>
+  <div id="title">
+    <h1>Montante</h1>
+    </div>
+    <div id="explicacion">
+      Consiste en seleccionar un elemento al cual se le denomina elemento pivote, con él 
+      se efectúan todas las operaciones de transformación aclarando que: <br><br>
+      1) No se puede considerar como elemento pivote un valor igual a cero. <br>
+      2) Considerar el signo que le corresponde al elemento pivote por su ubicación en 
+      el determinante. <br><br>
+      Para obtener el valor de cada elemento del determinante equivalente se aplica la 
+      siguiente fórmula: <br><br>
+<center>
+      N.E =  <span class="frac"><sup>(E.P)(E.A)-(E.C.F.P)(E.C.C.P)</sup><span>&frasl;</span>
+      <sub>P.A</sub></span><br><br>
+</center>
+      Donde: <br><br>
+      N.E.- nuevo elemento <br>
+      E.P.- elemento pivote <br>
+      E.A.- elemento actual (elemento externo) <br>
+      E.C.F.P.- elemento correspondiente a la fila del pivote <br>
+      E.C.C.P- elemento correspondiente a la columna del pivote <br>
+      P.A.- pivote anterior <br><br>
+      Reglas generales a seguir para construir la nueva matriz son las siguientes: <br> <br>
+      a) La fila se transfiere idéntica.  <br>
+      b) Las columnas quedarán formadas por ceros excepto la diagonal principal.
+<br><br></div>
+<div id="ejer">
+<table id="tabla">
+<tr>
+  <td>4x</td>
+  <td>+</td>
+  <td>6y</td>
+  <td>+</td>
+  <td>5z</td>
+  <td>=</td>
+  <td>3</td>
+</tr>
+<tr>
+  <td>-5x</td>
+  <td>+</td>
+  <td>6y</td>
+  <td>+</td>
+  <td>2z</td>
+  <td>=</td>
+  <td>-6</td>
+</tr>
+<tr>
+  <td>2x</td>
+  <td>-</td>
+  <td>6y</td>
+  <td>+</td>
+  <td>5z</td>
+  <td>=</td>
+  <td>9</td>
+</tr>
+
+</table> <br>
+
+</div>
+
+<div id="ejerRC">
+
+<table id="tabla">
+  <tr>
+    <td>4</td>
+    <td></td>
+    <td>6</td>
+    <td></td>
+    <td>5</td>
+    <td class="bl"></td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>-5</td>
+    <td></td>
+    <td>6</td>
+    <td></td>
+    <td>2</td>
+    <td class="bl"></td>
+    <td>-6</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td></td>
+    <td>-6</td>
+    <td></td>
+    <td>5</td>
+    <td class="bl"></td>
+    <td>9</td>
+  </tr>
+  </table>
+
+  <table id="tabla">
+    <tr>
+      <td><mark style="background-color: rgb(255, 0, 0); color: rgb(255, 255, 255);">4</mark></td>
+      <td></td>
+      <td><mark style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 255);">6</mark></td>
+      <td></td>
+      <td><mark style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 255);">5</mark></td>
+      <td class="bl"></td>
+      <td><mark style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 255);">3</mark></td>
+    </tr>
+    <tr>
+      <td><mark style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 255);">-5</mark></td>
+      <td></td>
+      <td>6</td>
+      <td></td>
+      <td>2</td>
+      <td class="bl"></td>
+      <td>-6</td>
+    </tr>
+    <tr>
+      <td><mark style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 255);">2</mark></td>
+      <td></td>
+      <td>-6</td>
+      <td></td>
+      <td>5</td>
+      <td class="bl"></td>
+      <td>9</td>
+    </tr>
+    </table>
+  
+  <br><br>
+</div>
+
+
+
+<div id="ejer">
+
+Primer pivote=4 <br>
+<table id="tabla">
+  <tr>
+    <td>4</td>
+    <td></td>
+    <td><center>6</center></td>
+    <td></td>
+    <td><center>5</center></td>
+    <td class="bl"></td>
+    <td><center>3</center></td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td></td>
+    <td><span class="frac"><sup>(4)(6)-(6)(-5)</sup><span>&frasl;</span>
+      <sub>1</sub></span></td>
+    <td></td>
+    <td><span class="frac"><sup>(4)(2)-(5)(-5)</sup><span>&frasl;</span>
+      <sub>1</sub></span></td>
+    <td class="bl"></td>
+    <td><span class="frac"><sup>(4)(-6)-(3)(-5)</sup><span>&frasl;</span>
+      <sub>1</sub></span></td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td></td>
+    <td><span class="frac"><sup>(4)(-6)-(6)(2)</sup><span>&frasl;</span>
+      <sub>1</sub></span></td>
+    <td></td>
+    <td><span class="frac"><sup>(4)(5)-(5)(2)</sup><span>&frasl;</span>
+      <sub>1</sub></span></td>
+    <td class="bl"></td>
+    <td><span class="frac"><sup>(4)(9)-(3)(2)</sup><span>&frasl;</span>
+      <sub>1</sub></span></td>
+  </tr>
+  </table><br>
+    Desarrolla para obtener el valor de X, Y y Z <br><br>
+<form action="">
+    X =<input type="number" id="res1" placeholder="Escribir respuesta"><br><br>
+    Y =<input type="number" id="res2" placeholder="Escribir respuesta"><br><br>
+    Z =<input type="number" id="res3" placeholder="Escribir respuesta"><br><br>
+
+
+
+    <button id="btn" disabled onclick="">Responder</button>
+
+    </form>
+</div>
+
+    <script src="D:\3D Objects\Metodo numericos pia1\JS\timer.js"></script>
+
+</body>
+</html>
